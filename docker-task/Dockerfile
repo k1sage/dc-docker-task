@@ -4,7 +4,8 @@ FROM golang:1.16-alpine
 
 WORKDIR /app
 
-ARG HTTP_PORT=8080
+ENV HTTP_PORT=8080
+ENV IP_ADDR=192.168.1.9
 
 COPY app .
 
